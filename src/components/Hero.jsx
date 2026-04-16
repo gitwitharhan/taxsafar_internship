@@ -63,10 +63,13 @@ const Hero = () => {
             <div className="bg-white p-1.5 rounded-full flex items-center shadow-md max-w-[460px]
                             mb-7 w-full ring-1 ring-transparent hover:ring-[#0eb15b]/20
                             hover:shadow-lg transition-all duration-300">
+              <div className="pl-4 text-slate-400">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-[18px] h-[18px]"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </div>
               <input
                 type="text"
                 placeholder="Search job, title etc...."
-                className="flex-1 bg-transparent border-none outline-none px-5 text-slate-600
+                className="flex-1 bg-transparent border-none outline-none px-3 text-slate-700
                            placeholder-slate-400 text-[15px]"
               />
               <button
@@ -80,10 +83,10 @@ const Hero = () => {
 
             {/* Popular Tags */}
             <div className="flex flex-wrap items-center gap-x-1 text-[14px] font-medium">
-              <span className="font-bold text-slate-800 mr-1">Populer:</span>
-              {['Return Filling,', 'Registrations,', 'Financial Planning,', 'VCompliances'].map((tag, i) => (
+              <span className="font-bold text-slate-800 mr-2">Popular:</span>
+              {['Return Filling', 'Registrations', 'Financial Planning', 'VCompliances'].map((tag, i) => (
                 <span key={i}
-                  className="text-slate-500 hover:text-[#0eb15b] cursor-pointer transition-colors duration-200">
+                  className="bg-[#dcf0e3] text-[#0a8f48] px-2.5 py-0.5 rounded-md text-[13px] font-semibold hover:bg-[#0eb15b] hover:text-white cursor-pointer transition-colors duration-200">
                   {tag}
                 </span>
               ))}

@@ -16,11 +16,13 @@ const useIntersection = (threshold = 0.15) => {
 };
 
 const Chevrons = () => (
-  <svg className="w-4 h-4 text-[#0eb15b] flex-shrink-0 mt-0.5" viewBox="0 0 24 24"
-       fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <polyline points="13 5 20 12 13 19" />
-    <polyline points="5 5 12 12 5 19" />
-  </svg>
+  <div className="w-5 h-5 rounded-full bg-[#e8f6ed] flex items-center justify-center flex-shrink-0 mt-0.5">
+    <svg className="w-3.5 h-3.5 text-[#0eb15b]" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="13 5 20 12 13 19" />
+      <polyline points="5 5 12 12 5 19" />
+    </svg>
+  </div>
 );
 
 const serviceData = [
