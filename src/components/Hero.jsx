@@ -112,7 +112,7 @@ const Hero = () => {
               className="relative z-10 w-full max-w-[500px] object-contain drop-shadow-2xl
                          group-hover/scene:-translate-y-2
                          group-hover/scene:drop-shadow-[0_35px_45px_rgba(14,177,91,0.2)]
-                         transition-all duration-500 animate-float-img"
+                         transition-all duration-500"
             />
 
             {/* Call Now card */}
@@ -122,8 +122,7 @@ const Hero = () => {
                             hover:shadow-[0_20px_50px_rgba(14,177,91,0.3)]
                             transition-all duration-300 group/call">
               <div className="relative flex-shrink-0">
-                <div className="absolute inset-0 rounded-full bg-[#0eb15b]/20"
-                     style={{ animation: 'pulseRing 2s ease-out infinite' }} />
+                <div className="absolute inset-0 rounded-full bg-[#0eb15b]/20" />
                 <div className="bg-[#0eb15b] rounded-full p-2.5 text-white relative
                                 group-hover/call:rotate-12 transition-transform duration-300">
                   <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
